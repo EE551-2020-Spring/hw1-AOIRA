@@ -5,7 +5,6 @@ Python Core object Types
 """
 
 import math
-
 def numbers_and_strings():
     """
     This is to review numbers and strings and basic operations.
@@ -43,7 +42,7 @@ def lists():
     print(p)
 
     # Get all the items past the first of the third substring
-    r = p[1:]
+    r = p[2][1:]
     print(r)
 
     # Create a 3 x 3 matrix as nested list such that
@@ -102,23 +101,24 @@ def dictionaries():
     #   name => {first_name => "Grace", last_name => "Hopper"} (a dictionary)
     #   jobs => ["scientist", "engineer"] (a list)
     #   age => 85
-    p = {"name":{"first_name" : "Grace", "last_name" : "Hopper"}, "jobs":["scientist", "engineer"], "age":85}
-    print(p)
+    amazing_grace = {"name":{"first_name" : "Grace", "last_name" : "Hopper"}, "jobs":["scientist", "engineer"], "age":85}
+    print(amazing_grace)
 
     # Add "programmer" to the list of jobs Grace has
     # IMPLEMENT IT HERE
-    print(p["jobs"])
-    p["jobs"].append("programmer")
-    print(p["jobs"])
+    # print(amazing_grace["jobs"])
+    amazing_grace["jobs"].append("programmer")
+    print(amazing_grace["jobs"])
 
     # Get the third job Grace has that you recently added
-    k = p["jobs"][-1]
-    print(k)
+    p = amazing_grace["jobs"][-1]
+    print(p)
 
     # Use the sort() function to get sorted keys of amazing_grace in alphabetically ascending order
-    kk = sorted("amazing_grace")
+    k = sorted(amazing_grace.keys())
+    # sorted
     
-    print(kk)
+    print(k)
 
     return a, f, p, k
     # return 1
